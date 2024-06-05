@@ -38,38 +38,38 @@ export default defineConfig([
     sourcemap: true,
   },
   // Svelte APIs
-  {
-    entry: ['svelte/index.ts'],
-    outDir: 'svelte/dist',
-    banner: {},
-    format: ['cjs', 'esm'],
-    external: ['react', 'svelte', 'vue', 'solid-js'],
-    dts: true,
-    sourcemap: true,
-    // `sswr` has some issue with `.es.js` that can't be resolved correctly by
-    // vite so we have to bundle it here.
-    noExternal: ['sswr'],
-  },
+  // {
+  //   entry: ['svelte/index.ts'],
+  //   outDir: 'svelte/dist',
+  //   banner: {},
+  //   format: ['cjs', 'esm'],
+  //   external: ['react', 'svelte', 'vue', 'solid-js'],
+  //   dts: true,
+  //   sourcemap: true,
+  //   // `sswr` has some issue with `.es.js` that can't be resolved correctly by
+  //   // vite so we have to bundle it here.
+  //   noExternal: ['sswr'],
+  // },
   // Vue APIs
-  {
-    entry: ['vue/index.ts'],
-    outDir: 'vue/dist',
-    banner: {},
-    format: ['cjs', 'esm'],
-    external: ['react', 'svelte', 'vue', 'solid-js'],
-    dts: true,
-    sourcemap: true,
-  },
+  // {
+  //   entry: ['vue/index.ts'],
+  //   outDir: 'vue/dist',
+  //   banner: {},
+  //   format: ['cjs', 'esm'],
+  //   external: ['react', 'svelte', 'vue', 'solid-js'],
+  //   dts: true,
+  //   sourcemap: true,
+  // },
   // Solid APIs
-  {
-    entry: ['solid/index.ts'],
-    outDir: 'solid/dist',
-    banner: {},
-    format: ['cjs', 'esm'],
-    external: ['react', 'svelte', 'vue', 'solid-js'],
-    dts: true,
-    sourcemap: true,
-  },
+  // {
+  //   entry: ['solid/index.ts'],
+  //   outDir: 'solid/dist',
+  //   banner: {},
+  //   format: ['cjs', 'esm'],
+  //   external: ['react', 'svelte', 'vue', 'solid-js'],
+  //   dts: true,
+  //   sourcemap: true,
+  // },
   // RSC APIs - shared client
   {
     // Entry is `.mts` as the entrypoints that import it will be ESM so it needs exact imports that includes the `.mjs` extension.

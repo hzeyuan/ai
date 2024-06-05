@@ -18,3 +18,4 @@ export type {
 } from './rsc-client';
 
 export type { StreamableValue } from './types';
+export { consumeStream } from './utils';
